@@ -1,5 +1,5 @@
 # $File: //member/autrijus/Locale-Hebrew-Calendar/Calendar.pm $ $Author: autrijus $
-# $Revision: #2 $ $Change: 3540 $ $DateTime: 2003/01/14 20:57:54 $
+# $Revision: #3 $ $Change: 3587 $ $DateTime: 2003/01/17 05:30:22 $
 
 package Locale::Hebrew::Calendar;
 
@@ -12,11 +12,12 @@ Locale::Hebrew::Calendar - Jewish Calendar
 
 =head1 VERSION
 
-This document describes version 0.02 of Locale::Hebrew::Calendar,
-released January 15, 2003.
+This document describes version 0.03 of Locale::Hebrew::Calendar,
+released January 17, 2003.
 
 =head1 SYNOPSIS
 
+    # 'g2j' and 'j2g' may be exported explicitly
     use Locale::Hebrew::Calendar;
 
     # Gregorian to Jewish
@@ -27,7 +28,7 @@ released January 15, 2003.
 
 =head1 DESCRIPTION
 
-This is an XSUB interface to a code which can be found on seveal main
+This is an XSUB interface to a code which can be found on several main
 FTP servers.  Neither Ariel nor Autrijus have contacted the author, but
 "He who says things in the name of their originators brings redemption
 to the world" -- The actual code was written by Amos Shapir.
@@ -36,12 +37,11 @@ to the world" -- The actual code was written by Amos Shapir.
 
 use Exporter;
 use DynaLoader;
-use AutoLoader;
 
 @ISA = qw(Exporter DynaLoader);
 @EXPORT = ();
 @EXPORT_OK = qw( g2j j2g );
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 __PACKAGE__->bootstrap($VERSION);
 
